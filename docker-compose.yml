@@ -9,8 +9,8 @@ services:
       - 16000:16000
       - 26000:26000
     volumes:
-      - isos:/app/iso
-      - config:/app/data
+      - /root/iventoy/isos:/app/iso
+      - /root/iventoy/config:/app/data
     environment:
       - AUTO_START_PXE=true
     
